@@ -22,7 +22,7 @@
         
         <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
         <link rel="stylesheet" href="style.css">
-        <script src="formulaire.js"></script>
+        <script type="text/javascript"src="formulaire.js"></script>
     </head>
     <body>        
         <h1>tp2</h1>
@@ -31,7 +31,7 @@
         <img src="../galilee.png" alt="Logo Galilee" width="10%"/>
 
 <div>
-        <form> <strong><h1>Saisir d'une fiche "Personne"</h1></strong>
+        <form method="POST" action="formulaire.js"> <strong><h1>Saisir d'une fiche "Personne"</h1></strong>
             
                 <label for="Nom">Nom</label>
                 <input type="text" id="Nom" name="Nom"  maxlength="20" minlength="5"><br/>
@@ -48,7 +48,7 @@
                 <label for="mail">Mail</label>
                 <input type="mail" id="mail" name="mail"  maxlength="30" minlength="5"><br/>
             
-                <input type="button" value="Valider">
+                <input type="button" value="Valider" id="bouton_valider">
 
                 <div id="error">
         
