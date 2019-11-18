@@ -31,7 +31,7 @@
         <img src="../galilee.png" alt="Logo Galilee" width="10%"/>
 
 <div>
-        <form method="POST" action="formulaire.js"> <strong><h1>Saisir d'une fiche "Personne"</h1></strong>
+        <form on submit="validation()"> <strong><h1>Saisir d'une fiche "Personne"</h1></strong>
             
                 <label for="Nom">Nom</label>
                 <input type="text" id="Nom" name="Nom"  maxlength="20" minlength="5"><br/>
@@ -48,17 +48,13 @@
                 <label for="mail">Mail</label>
                 <input type="mail" id="mail" name="mail"  maxlength="30" minlength="5"><br/>
             
-                <input type="button" value="Valider" id="bouton_valider">
+                <input type="button" value="Valider" onclick="validation()">
 
-                <div id="error">
-        
+            </form> 
 
-                    </div>
+                <div id="error"> </div>
 
-                    <div id="resultat">
-        
-
-                        </div>
+                    <div id="resultat"> </div>
 
             
                     
@@ -67,7 +63,7 @@
 
                     
 
-        </form> 
+        
 
 
     </body>
