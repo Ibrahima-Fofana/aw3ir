@@ -10,6 +10,22 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
+        <!-- jquery pour pouvoir utiliser les composants JS de boostap (modal, tooltip...) -->
+        <script src="js/jquery-3.2.1.slim.min.js"></script>
+
+        <!-- CSS boostrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <script src="js/popper.min.js"></script>
+
+        <!-- composants JS de boostrap (modal http://getbootstrap.com/docs/4.0/components/modal/ , collapse...) -->
+        <script src="js/bootstrap.min.js"></script>
+
+         <!-- composants JS pour validation du formulaire -->
+        <script src="js/form-query-validation.js"></script>
+
+
+
         <style>
           body{
               background-color: #e9ebee;              
@@ -29,5 +45,47 @@
         <!-- Add your site or application content here -->
         <p>Hello world! This is HTML5 Boilerplate.</p>
         <img src="../galilee.png" alt="Logo Galilee"/>
+
+
+        <div class="container">
+            <h1> TP AW - FORMULAIRE V2 </h1>
+
+            <form>
+            <div class="form-group">
+                <label for="nom">nom</label>
+                <input type="text" class="form-control" id="nom" aria-describedby="nameHelp" placeholder="your last name"><br/>
+
+              </div>
+
+              <div class="form-group">
+                <label for="prenom">prenom</label>
+                <input type="text" class="form-control" id="prenom" aria-describedby="prenomHelp" placeholder="your first name"><br/>
+              </div>
+
+              <div class="form-group">
+                <label for="date">date</label>
+                <input type="date" class="form-control" id="date" aria-describedly="dateHelp" placeholder= jj/mm/aaaa" required>
+                
+            </div>
+            
+            
+
+              <div class="form-group">
+                <label for="addresse">adresse</label>
+                <input type="text" class="form-control" id="adresse" aria-describedby="adresseHelp" placeholder="your address"><br/>
+              </div>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">Votre adresse mail ne sera pas divulgué </small>
+              </div>
+                
+    
+            <button type="button" class="btn btn-primary">Valider</button>
+
+                </form>
+          </div>
+          
     </body>
 </html>
