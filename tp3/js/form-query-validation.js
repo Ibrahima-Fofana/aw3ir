@@ -4,7 +4,7 @@ $( document ).ready(function() {
      console.log( "DOM ready!" );
      
      // Y mettre le code jQuery pour valider tous les champs du formulaire
-     onload="document.forms['container'].elements['nom'].focus()"
+     
 
-     $('.input-group date').DataTable();
+     $('#myModal').modal("show");
  });
